@@ -1,2 +1,2 @@
 # recipebox
-A sandbox for Git training
+A sandbox for Git training.
