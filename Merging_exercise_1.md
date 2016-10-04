@@ -8,7 +8,16 @@ The same applies to Git. When multiple people are working in the same developmen
 Work through the following tasks to discover how to successfully share a branch.
 
 ## Adding new files
-Sharing a branch is fairly easy when you're just adding new files. First, have one teammate create a new branch called `new_recipes`. Then each cook should do one of the following in the `new_recipes` branch.
+Sharing a branch is fairly easy when you're just adding new files. First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
+
+```
+git checkout -b new_recipes
+git push --set-upstream origin new_recipes
+```
+
+The rest of the team can fetch and checkout this branch with `git fetch orign` followed by `git checkout new_recipes`.
+
+Then each cook should do one of the following in the `new_recipes` branch.
 
 ### Cook #1
 Do the following to add a cookie recipe to the recipe box.
@@ -16,6 +25,8 @@ Do the following to add a cookie recipe to the recipe box.
 1. Open a text editor and paste the following.
 
  ```
+![recipe image](https://static01.nyt.com/images/2014/04/24/dining/French-TV-Snacks/French-TV-Snacks-articleLarge.jpg)
+
 # Buttery French TV Snacks
 Good butter is the key to these easy, delectable cookies. Before the pastry chef Anita Chu began work on her “Field Guide to Cookies” (Quirk Books), she was a Berkeley-trained structural engineer with a baking habit she couldn’t shake. One of her favorite cookies is the croq-télé, or TV snack, a chunky cookie she adapted from the Paris pastry chef Arnaud Larher. “There is no leavening to lift it, no eggs to hold it together,” she said. “It’s all about the butter.”
 
@@ -123,5 +134,12 @@ Now you're just asking for conflicts. But sometimes you gotta do it, so let's fi
 3. Add and commit the change using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
 4. Push to the remote repo using `git push`.
 
-### Results
+BAD NEWS: You probably got a merge conflict! 
+
+### Conflict cause & resolution
+So what happened?
+
+When two people 
+
+### Final results
 Probably some trouble, I'd guess... But maybe not yet.

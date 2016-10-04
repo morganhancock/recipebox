@@ -1,3 +1,5 @@
+![recipe image](https://static01.nyt.com/images/2016/09/28/dining/28ALTON6-WEB/28ALTON6-WEB-articleLarge.jpg)
+
 # Breakfast Carbonara
 Alton Brown developed this recipe for his book "EveryDayCook" because it hits all of the best notes of breakfast in a way that is much more appealing than just eggs, sausage and toast. If you eat pasta early in the day, he reasons, that leaves plenty of time to work it off. He’s a fan of cooking in cast iron, and calls for it here. But any good 12-inch sauté pan will do.
 
