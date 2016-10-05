@@ -133,10 +133,27 @@ This is basically the same as adding new files, but let's do it.
 4. Push to the remote repo using `git push`.
 
 ### Conflict cause & resolution
-So what happened?
+*So what happened?*
+
+Cook #2 didn't have the change Cook #1 made to `greek_goddess_dip.md`. So when Cook #2 tried to push the commit containing the change to `thai_fried_rice.md`, Git threw a conflict.
+
+*But these are separate files, why would there be a conflict?*
+
+With Git, it's not about separate files, it's about a repository's history. Cook #2's history didn't match the remote branch's history because Cook #1 changed it. When Cook #2 tried to push to the remote, Git saw that Cook #1's commit was missing.
+
+#### Resolution
+Cook #2 can resolve the conflict and push to the remote by doing the following.
+
+1. Enter `git status` to compare how the state if the remote and local branch.
+2. Enter `git pull` to get updates from the remote branch.
+
+ This should've added the commits made by Cook #1 to your local copy of the `new_recipes` branch.
+3. Enter `git push` to send your commit to the remote.
 
 ### Summary
-Honestly I'm not sure yet! Ha! State what happened and explain why it worked or didn't work...
+When working in the same development environment, each cook needs to keep track of what others are pushing to the remote. Errors occur when one cook changes the remote's history and another cook tries pushing before getting that change.
+
+Check the branch's remote and local status with `git status` then enter `git pull` before pushing.
 
 ## Editing the same file
 Now you're just asking for conflicts. But sometimes you gotta do it, so let's figure this out.
@@ -148,24 +165,36 @@ Now you're just asking for conflicts. But sometimes you gotta do it, so let's fi
 ![recipe image](https://static01.nyt.com/images/2016/09/28/dining/28ROOSTER1/28ROOSTER1-articleLarge.jpg)
 ```
 2. Save the file.
-3. Add and commit the change using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
 1. In the `dinner` folder, open `obamas_short_ribs.md`, and replace `1 onion, chopped` with `½ cup chopped onion`. 
 2. Save the file.
-3. Add and commit the change using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
-BAD NEWS: You probably got a merge conflict! 
 
 ### Conflict cause & resolution
-So what happened?
+*So what happened?*
 
-When two people 
+Both cooks edited the same file, So when Cook #2 tried to push the commit containing the change to `obamas_short_ribs.md`, Git threw a conflict.
+
+*Does that mean we can't work in the same file?*
+
+Nope! It just means that you'll have to manually resolve the conflicts on your own. Git isn't *that* magical.
+
+#### Resolution
+Cook #2 will need to manually merge the changes in this file. Complete the following steps to do it.
+
+1. Enter `git pull` to get updates from the remote branch.
+2. In a text editor, open `obamas_short_ribs.md`.
+3. Manually merge the changes (specific instructions coming soon!)
+4. Add and commit the change using `git commit -am "<your commit message>"`. 
+5. Enter `git push` to send your commit to the remote.
 
 ### Summary
-Probably some trouble, I'd guess... But maybe not yet.
+Again, `git status` and `git pull` would have helped you out, but you still couldn't have avoided this conflict. You'll have to manually merge the changes in this file.
 
 ## TL;DR
-Pull before you push.
+`git status` to compare the remote and local branch, `git pull` to update before pushing.
