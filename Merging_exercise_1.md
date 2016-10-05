@@ -8,7 +8,7 @@ The same applies to Git. When multiple people are working in the same developmen
 Work through the following tasks to discover how to successfully share a branch.
 
 ## Adding new files
-Sharing a branch is a fairly easy way to collaborate. First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
+First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
 
 ```
 git checkout -b new_recipes
@@ -87,10 +87,27 @@ FOR THE GARNISH
 4. Push to the remote repo using `git push`.
 
 ### Conflict cause & resolution
-So what happened?
+*So what happened?*
+
+Cook #2 didn't have the `buttery_french_cookie.md` file Cook #1 added and pushed to the remote repo. So when Cook #2 tried to push the commit containing `thai_fried_rice.md`, Git threw a conflict.
+
+*But these are separate files, why would there be a conflict?*
+
+With Git, it's not about separate files, it's about a repository's history. Cook #2's history didn't match the remote branch's history because Cook #1 changed it. When Cook #2 tried to push to the remote, Git saw that Cook #1's commit was missing.
+
+#### Resolution
+Cook #2 can resolve the conflict and push to the remote by doing the following.
+
+1. Enter `git status` to compare how the state if the remote and local branch.
+2. Enter `git pull` to get updates from the remote branch.
+
+ This should've added the commits made by Cook #1 to your local copy of the `new_recipes` branch.
+3. Enter `git push` to send your commit to the remote.
 
 ### Summary
-Honestly I'm not sure yet! Ha! State what happened and explain why it worked or didn't work...
+When working in the same development environment, each cook needs to keep track of what others are pushing to the remote. Errors occur when one cook changes the remote's history and another cook tries pushing before getting that change.
+
+Check the branch's remote and local status with `git status` then enter `git pull` before pushing.
 
 ## Editing existing, but different files
 This is basically the same as adding new files, but let's do it.
