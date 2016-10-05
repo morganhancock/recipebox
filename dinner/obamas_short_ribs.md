@@ -1,4 +1,6 @@
 # Obama’s Short Ribs
+Do you think this will cause a merge conflict? I DARE IT TO.
+
 This is the dish that the chef Marcus Samuelsson made for President Obama when he visited the restaurant Red Rooster Harlem. This is an easy braise with wonderful flavors — plum sauce, lemongrass, soy sauce — and as it is pointed out in "The Red Rooster Cookbook," short ribs taste more expensive than they actually are, making them ideal for guests. Make it earlier in the day, then simply reheat when you're ready to serve dinner. The book suggests freezing the extra braising liquid in ice cube trays, so you can slip it into pan sauces or pasta for oomph.
 
 ## Ingredients
