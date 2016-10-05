@@ -24,7 +24,7 @@ Now let's add a new recipe.
 
 1. Open a text editor and paste the following.
  ```
-![recipe image](https://static01.nyt.com/images/2016/09/28/dining/28ALTON6-WEB/28ALTON6-WEB-articleLarge.jpg)
+![recipe image](https://static01.nyt.com/images/2014/04/03/dining/All-Purpose-Biscuits/All-Purpose-Biscuits-articleLarge.jpg)
 
 # All-Purpose Biscuits
 Biscuits are what take us into the kitchen today to cook: fat, flaky mounds of quick bread, golden brown, with a significant crumb. Composed of flour, baking powder, fat and a liquid, then baked in a hot oven, they are an excellent sop for sorghum syrup, molasses or honey. They are marvelous layered with country ham or smothered in white sausage gravy, with eggs, with grits. Biscuits are easy to make.
