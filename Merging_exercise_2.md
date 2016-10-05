@@ -9,7 +9,7 @@ But imagine if you could cook a meal with someone else, but have your own, separ
 
 In Git, branches are like private kitckens. They're independent development environments.
 
-## Getting updates from another branch
+## 2.1 Getting updates from another branch
 Sometimes you need to get updates from another branch. Let's do that.
 
 ### Cook #1
@@ -62,7 +62,7 @@ Cook #2 was able to pull that biscuit recipe into the `new_recipes` branch. But 
 
 Cook #2 may choose this workflow for many reasons, like if the cooks want to release all new recipes at the same time. In that case, the cooks will add all of their new recipes and changes to `new recipes`, even if they decide to cook in a different kitchen (develop in a different environment). 
 
-## Merging into the master branch
+## 2.2 Merging into the master branch
 Let's say that the cooks don't want to release a new batch of recipes all at once; they want to release new content as soon as it's developed. Let's see how that would work.
 
 ### Cook #1 (or any cook)
