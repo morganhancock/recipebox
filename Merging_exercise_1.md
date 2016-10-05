@@ -8,7 +8,7 @@ The same applies to Git. When multiple people are working in the same developmen
 Work through the following tasks to discover how to successfully share a branch.
 
 ## Adding new files
-Sharing a branch is fairly easy when you're just adding new files. First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
+Sharing a branch is a fairly easy way to collaborate. First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
 
 ```
 git checkout -b new_recipes
@@ -44,7 +44,7 @@ Good butter is the key to these easy, delectable cookies. Before the pastry chef
 4. Bake about 15 minutes, rotating cookie sheets halfway through. Cookies should be turning golden brown on edges. Cool on sheets 5 minutes, then transfer to wire racks and cool completely before storing in airtight containers up to 1 week.
 ```
 2. Save the file as `buttery_french_cookie.md` in the `snacks` folder. 
-3. Add and commit the new recipe using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
@@ -83,14 +83,17 @@ FOR THE GARNISH
 5. Serve, garnishing each plate with the cilantro and cucumbers and passing lime wedges, scallions and fish sauce with chiles. Diners should squeeze lime juice onto their rice as they eat.
 ```
 2. Save the file as `thai_fried_rice.md` in the `dinner` folder. 
-3. Add and commit the new recipe using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
-### Results
+### Conflict cause & resolution
+So what happened?
+
+### Summary
 Honestly I'm not sure yet! Ha! State what happened and explain why it worked or didn't work...
 
 ## Editing existing, but different files
-This is basically the same as adding new files since you aren't working on top of anyone else yet.
+This is basically the same as adding new files, but let's do it.
 
 ### Cook #1
 1. In the `snacks` folder, open `greek_goddess_dip.md`, add the following to the first line, and press enter.
@@ -99,7 +102,7 @@ This is basically the same as adding new files since you aren't working on top o
 ![recipe image](https://static01.nyt.com/images/2014/04/08/dining/goddessdip/Greek-Goddess-Dip-articleLarge-v2.jpg)
 ```
 2. Save the file.
-3. Add and commit the change using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
@@ -109,10 +112,13 @@ This is basically the same as adding new files since you aren't working on top o
 ![recipe image](https://static01.nyt.com/images/2016/05/23/dining/thai-combination-fried-rice/thai-combination-fried-rice-articleLarge.jpg)
 ```
 2. Save the file.
-3. Add and commit the change using `git commit *`. In the notepad file that opens, type your commit message and save and close the file.
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
-### Results
+### Conflict cause & resolution
+So what happened?
+
+### Summary
 Honestly I'm not sure yet! Ha! State what happened and explain why it worked or didn't work...
 
 ## Editing the same file
@@ -141,5 +147,8 @@ So what happened?
 
 When two people 
 
-### Final results
+### Summary
 Probably some trouble, I'd guess... But maybe not yet.
+
+## TL;DR
+Pull before you push.
