@@ -1,4 +1,5 @@
 # Thai Combination Fried Rice
+![recipe image](https://static01.nyt.com/images/2016/05/23/dining/thai-combination-fried-rice/thai-combination-fried-rice-articleLarge.jpg)
 This dish is loosely based on Thailand’s ubiquitous fried rice dish, kao pad. Usually some kind of animal protein accompanies the rice — squid, crabmeat, ham, chicken, whatever the cook has on hand. My version relies instead on tofu and vegetables; the most important ingredients are the rice itself, the garlic and the fish sauce. Have all of your ingredients prepared and close to the stove. Cooking goes very quickly.
 
 ## Ingredients
