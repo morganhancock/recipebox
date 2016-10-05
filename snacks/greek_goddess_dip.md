@@ -1,3 +1,4 @@
+![recipe image](https://static01.nyt.com/images/2014/04/08/dining/goddessdip/Greek-Goddess-Dip-articleLarge-v2.jpg)
 # Greek Goddess Dip
 This Greek goddess dip is stunningly verdant and has a bright herby flavor. The Greek strain in this dressing comes from using dill in place of watercress. Make it and watch it do a disappearing act on vegetables, pita chips or whatever conduit you can dream up.
 
