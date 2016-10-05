@@ -44,7 +44,7 @@ Good butter is the key to these easy, delectable cookies. Before the pastry chef
 4. Bake about 15 minutes, rotating cookie sheets halfway through. Cookies should be turning golden brown on edges. Cool on sheets 5 minutes, then transfer to wire racks and cool completely before storing in airtight containers up to 1 week.
 ```
 2. Save the file as `buttery_french_cookie.md` in the `snacks` folder. 
-3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
+3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
@@ -83,7 +83,7 @@ FOR THE GARNISH
 5. Serve, garnishing each plate with the cilantro and cucumbers and passing lime wedges, scallions and fish sauce with chiles. Diners should squeeze lime juice onto their rice as they eat.
 ```
 2. Save the file as `thai_fried_rice.md` in the `dinner` folder. 
-3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
+3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Conflict cause & resolution
@@ -102,7 +102,7 @@ This is basically the same as adding new files, but let's do it.
 ![recipe image](https://static01.nyt.com/images/2014/04/08/dining/goddessdip/Greek-Goddess-Dip-articleLarge-v2.jpg)
 ```
 2. Save the file.
-3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
@@ -112,7 +112,7 @@ This is basically the same as adding new files, but let's do it.
 ![recipe image](https://static01.nyt.com/images/2016/05/23/dining/thai-combination-fried-rice/thai-combination-fried-rice-articleLarge.jpg)
 ```
 2. Save the file.
-3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
+3. Add and commit the change using `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Conflict cause & resolution

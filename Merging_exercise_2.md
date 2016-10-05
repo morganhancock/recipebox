@@ -14,6 +14,7 @@ Sometimes you need to get updates from another branch. Let's do that.
 
 ### Cook #1
 First you need to set up your own private kitchen. Do the following to create a new branch.
+
 1. Start from the `master` branch. If you're on another branch enter `git checkout master`. 
 2. Create and checkout a new branch by entering `git checkout -b breakfast`.
 
@@ -45,7 +46,7 @@ Biscuits are what take us into the kitchen today to cook: fat, flaky mounds of q
 6. Place biscuits on a cookie sheet and bake until golden brown, approximately 10 to 15 minutes.
 ```
 2. Save the file as `biscuits.md` in the `breakfast` folder. 
-3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `"<your commit message>"` with a descriptive commit message!
+3. Add and commit the new recipe using `git add -A` followed by `git commit -am "<your commit message>"`. Make sure you replace `<your commit message>` with a descriptive commit message!
 4. Push to the remote repo using `git push`.
 
 ### Cook #2
