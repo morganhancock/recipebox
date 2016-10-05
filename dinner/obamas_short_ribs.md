@@ -5,7 +5,7 @@ This is the dish that the chef Marcus Samuelsson made for President Obama when h
 * 8 (6-ounce) English-cut short ribs
 * Kosher salt and freshly ground black pepper
 * 2 tablespoons grapeseed oil
-* 1 onion, chopped
+* ½ cup chopped onion
 * 1 carrot, trimmed and chopped
 * 2 celery ribs, trimmed and chopped
 * 1 lemongrass stalk, trimmed, smashed and minced
