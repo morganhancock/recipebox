@@ -15,10 +15,10 @@ Sometimes you need to get updates from another branch. Let's do that.
 ### Cook #1
 First you need to set up your own private kitchen. Do the following to create a new branch.
 
-1. Start from the `master` branch. If you're on another branch enter `git checkout master`. 
+1. Start from the `MASTER` branch. If you're on another branch enter `git checkout MASTER`. 
 2. Create and checkout a new branch by entering `git checkout -b breakfast`.
 
-You just created a new branch that, right now, matches the `master` branch. It doesn't contain the commits (the new recipes and changes to existing recipes) from Exercise 1.
+You just created a new branch that, right now, matches the `MASTER` branch. It doesn't contain the commits (the new recipes and changes to existing recipes) from Exercise 1.
 
 Now let's add a new recipe.
 
@@ -56,43 +56,43 @@ You're going to keep working in the branch created in Exercise 1, `new_recipes`.
 2. Enter `git merge breakfast`.
 
 ### Summary
-Cook #1 created a new development environment, `breakfast`, that matched the `master` branch. This branch didn't contain any of the new recipes or updates created in Exercise 1. Cook #1 added a new biscuit recipe to the `breakfast` branch. 
+Cook #1 created a new development environment, `breakfast`, that matched the `MASTER` branch. This branch didn't contain any of the new recipes or updates created in Exercise 1. Cook #1 added a new biscuit recipe to the `breakfast` branch. 
 
-Cook #2 was able to pull that biscuit recipe into the `new_recipes` branch. But why would Cook #2 add the biscuit recipe to `new_recipes` instead of `master`? 
+Cook #2 was able to pull that biscuit recipe into the `new_recipes` branch. But why would Cook #2 add the biscuit recipe to `new_recipes` instead of `MASTER`? 
 
 Cook #2 may choose this workflow for many reasons, like if the cooks want to release all new recipes at the same time. In that case, the cooks will add all of their new recipes and changes to `new recipes`, even if they decide to cook in a different kitchen (develop in a different environment). 
 
-## 2.2 Merging into the master branch
+## 2.2 Merging into the MASTER branch
 Let's say that the cooks don't want to release a new batch of recipes all at once; they want to release new content as soon as it's developed. Let's see how that would work.
 
 ### Cook #1 (or any cook)
-In the previous section, Cook #1 created a new branch, `breakfast`, and added a new recipe to it, `biscuits.md`. To release that recipe right away, instead of waiting for the `new_recipes` to release, Cook #1 needs to merge into the `master` branch. You can merge locally or through a pull request, so choose one of the following.
+In the previous section, Cook #1 created a new branch, `breakfast`, and added a new recipe to it, `biscuits.md`. To release that recipe right away, instead of waiting for the `new_recipes` to release, Cook #1 needs to merge into the `MASTER` branch. You can merge locally or through a pull request, so choose one of the following.
 
 #### Merging locally
-If your team is cool with merging into master locally, do the following.
+If your team is cool with merging into MASTER locally, do the following.
 
 1. Start from the `breakfast` branch. If you're on another branch enter `git checkout breakfast`.
-2. Enter `git pull master` to make sure `breakfast` isn't missing anything newly adde to `master` (remember what you learned in Exercise 1)!
-3. Enter `git checkout master` to switch to the `master` branch. 
+2. Enter `git pull MASTER` to make sure `breakfast` isn't missing anything newly adde to `MASTER` (remember what you learned in Exercise 1)!
+3. Enter `git checkout MASTER` to switch to the `MASTER` branch. 
   
-  Why? You want `master` to have the biscuit recipe that's in `breakfast`, so you need to switch to `master` before merging.
+  Why? You want `MASTER` to have the biscuit recipe that's in `breakfast`, so you need to switch to `MASTER` before merging.
 4. Enter `git merge breakfast`.
 
-The `master` branch in your **local** repository now contains commits made in `breakfast` (the new biscuit recipe). Update the remote `master` branch by entering `git push`. You can then delete `breakfast` by entering `git branch -d breakfast`.
+The `MASTER` branch in your **local** repository now contains commits made in `breakfast` (the new biscuit recipe). Update the remote `MASTER` branch by entering `git push`. You can then delete `breakfast` by entering `git branch -d breakfast`.
 
 #### Merging through a pull request
-If your team is a little more strict about merging into the master branch, do the following to submit a pull request.
+If your team is a little more strict about merging into the MASTER branch, do the following to submit a pull request.
 
 1. Start from the `breakfast` branch. If you're on another branch enter `git checkout breakfast`.
-2. Enter `git pull master` to make sure `breakfast` isn't missing anything newly added to `master` (remember what you learned in Exercise 1)!
+2. Enter `git pull MASTER` to make sure `breakfast` isn't missing anything newly added to `MASTER` (remember what you learned in Exercise 1)!
 3. Enter `git push` to make sure the remote branch is up-to-date.
-4. In your web browser, go to <https://github.com/morganhancock/recipebox/pull/new/master>.
-5. In the **base:** drop down select `master` and in the **compare** drop down select `breakfast`.
+4. In your web browser, go to <https://github.com/morganhancock/recipebox/pull/new/MASTER>.
+5. In the **base:** drop down select `MASTER` and in the **compare** drop down select `breakfast`.
 6. Update the pull request details if desired, then click the **Create pull request button**.
 
 Someone else on your team can then review your pull request and merge it.
 
-## 2.3 Merging into master when master has changed
+## 2.3 Merging into MASTER when MASTER has changed
 
 ## 2.4 Undoing a merge, but saving it for later
 But I want to keep this commit.
