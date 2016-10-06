@@ -97,3 +97,4 @@ Someone else on your team can then review your pull request and merge it.
 ## 2.4 Undoing a merge, but saving it for later
 
 ## 2.5 Merging a *really* old branch
+I don't want this commit.
