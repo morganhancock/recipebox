@@ -17,3 +17,4 @@ Right now, Recipebox only has the following exercises.
 ### Merging
 Master merging using the exercises below. These exercises require multiple people, so grab a buddy and dive in.
 * [Exercise 1: Sharing a branch](Merging_exercise_1.md)
+* [Exercise 2: Merging branches](Merging_exercise_2.md)

@@ -7,7 +7,7 @@ The same applies to Git. When multiple people are working in the same developmen
 
 Work through the following tasks to discover how to successfully share a branch.
 
-## Adding new files
+## 1.1 Adding new files
 First, have one teammate create a new branch called `new_recipes` and push it to the remote. The following commands should do the trick.
 
 ```
@@ -109,7 +109,7 @@ When working in the same development environment, each cook needs to keep track 
 
 Check the branch's remote and local status with `git status` then enter `git pull` before pushing.
 
-## Editing existing, but different files
+## 1.2 Editing existing, but different files
 This is basically the same as adding new files, but let's do it.
 
 ### Cook #1
@@ -155,7 +155,7 @@ When working in the same development environment, each cook needs to keep track 
 
 Check the branch's remote and local status with `git status` then enter `git pull` before pushing.
 
-## Editing the same file
+## 1.3 Editing the same file
 Now you're just asking for conflicts. But sometimes you gotta do it, so let's figure this out.
 
 ### Cook #1
