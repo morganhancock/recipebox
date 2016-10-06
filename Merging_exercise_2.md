@@ -98,4 +98,3 @@ Someone else on your team can then review your pull request and merge it.
 But I want to keep this commit.
 
 ## 2.5 Merging a *really* old branch
-I don't want this commit.
