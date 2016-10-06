@@ -1,5 +1,5 @@
 # Exercise 2: Merging work
-> **Cooks:** 2+ **Goal:** Multiple cooks add new recipes and edit existing recipes without conflict.
+> **Cooks:** 2+ **Goal:** Multiple cooks add new recipes and edit existing recipes in their own work space and merge without conflict.
 
 If you didn't complete [Exercise 1: Sharing a branch](Merging_exercise_1.md), stop and go do that! This exercise builds on work done in Exercise 1.
 
@@ -171,12 +171,47 @@ Then use one of the methods covered in section 2.2 to merge `breakfast` into `ma
 Do you know why you had to merge `master` into `breakfast` before merging `breakfast` into `master`?
 
 ## 2.4 Undoing a merged commit (& reapplying it later)
-Sometimes you have to remove merged
+Sometimes you have to remove a commit you've already merged into `master` (or any branch). As a cook, this can be as easy and removing a side dish or as complex as removing an ingredient after you've already made the meal. 
+
+With Git, there are *many* ways to do undo changes and the best method varies for every situation. For this exercise, we'll use `git revert` to undo a merged commit. `git revert` is sufficient in many common scenarios and is often preferred if the commit is already pushed to the remote.
+
+### Cook #1 (or any cook)
+In exercise 2.3, we added a new recipe, `eggs_in_hole.md`. Lets get rid of it.
+
+1. Start from the `master` branch. If you're on another branch enter `git checkout master`. Make sure the branch is up-to-date.
+2. Enter `git checkout -b hotfix_rm_recipe` to create a new branch.
+3. Enter `git log` to display the commit history. Since you haven't added any commits to this branch yet, its commit history is identical to `master` at this point.
+4. Find the commit that added `eggs_in_hole.md`.
+5. Copy the commit's SHA-1 checksum (the really long alphanumeric code, it will look something like `commit ca82a6dff817ec66f44342007202690a93763949`. Make sure you only copy the alphanumeric code).
+6. Enter `git revert <commit SHA-1>` to revert that commit.
+
+Check your `breakfast` folder. It should no longer contain `eggs_in_hole.md`. 
+
+You can then merge this branch into `master` using one of the methods covered in exercise 2.2. 
+
+### Reapplying the reverted commit
+Sometimes after reverting a commit, you need to apply it again. For example, Cook #1 just reverted the commit that added `eggs_in_hole.md` to recipebox's main branch. Maybe Cook #1 did this because `eggs_in_hole.md` was released to early, but the cooks plan to release it later on. 
+
+Well it's later, so let's get that recipe back! Again, there are several ways to do this, but let's focus on using `git revert`.
+
+#### Cook #1
+First, let's change `master` again so this isn't *too* easy! Merge the `new_recipes` into `master ` using one of the methods covered in exercise 2.2.
+
+#### Cook #2
+Now we need to recover the reverted commit. Do the following.
+
+1. Start from the `master` branch. If you're on another branch enter `git checkout master`. Make sure the branch is up-to-date.
+2. Enter `git checkout -b hotfix_add_recipe` to create a new branch.
+3. Enter `git log` to display the commit history. Since you haven't added any commits to this branch yet, its commit history is identical to `master` at this point.
+4. Find the commit that reverted the commit that added `eggs_in_hole.md`.
+5. Copy the commit's SHA-1 checksum.
+6. Enter `git revert <commit SHA-1>` to revert that commit.
 
 ## 2.5 Merging a *really* outdated branch
 (coming soon)
 
 ## 2.6 Adding files from another branch
+(coming soon)
 
 ## 2.7 Adding a specific commit from another branch
 (coming soon)
