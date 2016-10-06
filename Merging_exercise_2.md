@@ -3,7 +3,8 @@
 
 If you didn't complete [Exercise 1: Sharing a branch](Merging_exercise_1.md), stop and go do that! This exercise builds on work done in Exercise 1.
 
-Will this line throw an error?
+Will this line throw an error? What about this?
+Or perhaps another line? Yikes! Idk! 
 
 Developers working in the same branch are like cooks working in the same kitchen—while they might get in each other's way, it's easy to see what's going on.
 
@@ -79,6 +80,9 @@ If your team is cool with merging into master locally, do the following.
   
   Why? You want `master` to have the biscuit recipe that's in `breakfast`, so you need to switch to `master` before merging.
 4. Enter `git merge breakfast`.
+
+This could throw a conflict, right?
+Or perhaps THIS!
 
 The `master` branch in your **local** repository now contains commits made in `breakfast` (the new biscuit recipe). Update the remote `master` branch by entering `git push`. You can then delete `breakfast` by entering `git branch -d breakfast`.
 
