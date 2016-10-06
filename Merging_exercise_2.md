@@ -3,6 +3,8 @@
 
 If you didn't complete [Exercise 1: Sharing a branch](Merging_exercise_1.md), stop and go do that! This exercise builds on work done in Exercise 1.
 
+Will this line throw an error?
+
 Developers working in the same branch are like cooks working in the same kitchen—while they might get in each other's way, it's easy to see what's going on.
 
 But imagine if you could cook a meal with someone else, but have your own, separate workspace. You'd have complete control over your kitchen—your development environment—and you wouldn't have to worry too much about the other cook messing up your dish while you're working on it. You only have to worry about combining your dishes into a meal after you've cooked them.
@@ -101,3 +103,4 @@ But now I want that old commit back.
 ## 2.5 Merging a *really* old branch
 I don't want this commit.
 Let's try some other changes now.
+And now I want to keep going. 
