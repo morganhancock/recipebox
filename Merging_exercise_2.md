@@ -99,3 +99,4 @@ But I want to keep this commit.
 But now I want that old commit back.
 
 ## 2.5 Merging a *really* old branch
+I don't want this commit.
