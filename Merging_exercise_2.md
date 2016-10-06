@@ -84,7 +84,9 @@ The `MASTER` branch in your **local** repository now contains commits made in `b
 If your team is a little more strict about merging into the MASTER branch, do the following to submit a pull request.
 
 1. Start from the `breakfast` branch. If you're on another branch enter `git checkout breakfast`.
-2. Enter `git pull MASTER` to make sure `breakfast` isn't missing anything newly added to `MASTER` (remember what you learned in Exercise 1)!
+2. Enter 
+q
+`git pull MASTER` to make sure `breakfast` isn't missing anything newly added to `MASTER` (remember what you learned in Exercise 1)!
 3. Enter `git push` to make sure the remote branch is up-to-date.
 4. In your web browser, go to <https://github.com/morganhancock/recipebox/pull/new/MASTER>.
 5. In the **base:** drop down select `MASTER` and in the **compare** drop down select `breakfast`.
