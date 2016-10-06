@@ -95,6 +95,7 @@ Someone else on your team can then review your pull request and merge it.
 ## 2.3 Merging into master when master has changed
 
 ## 2.4 Undoing a merge, but saving it for later
+But I want to keep this commit.
 
 ## 2.5 Merging a *really* old branch
 I don't want this commit.
