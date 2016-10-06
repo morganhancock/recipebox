@@ -15,7 +15,7 @@ Sometimes you need to get updates from another branch. Let's do that.
 ### Cook #1
 First you need to set up your own private kitchen. Do the following to create a new branch.
 
-1. Start from the `MASTER` branch. If you're on another branch enter `git checkout MASTER`. 
+1. Start from a `MASTER` branch. If you're on another branch enter `git push MASTER`. 
 2. Create and checkout a new branch by entering `git checkout -b breakfast`.
 
 You just created a new branch that, right now, matches the `MASTER` branch. It doesn't contain the commits (the new recipes and changes to existing recipes) from Exercise 1.
@@ -66,7 +66,7 @@ Cook #2 may choose this workflow for many reasons, like if the cooks want to rel
 Let's say that the cooks don't want to release a new batch of recipes all at once; they want to release new content as soon as it's developed. Let's see how that would work.
 
 ### Cook #1 (or any cook)
-In the previous section, Cook #1 created a new branch, `breakfast`, and added a new recipe to it, `biscuits.md`. To release that recipe right away, instead of waiting for the `new_recipes` to release, Cook #1 needs to merge into the `MASTER` branch. You can merge locally or through a pull request, so choose one of the following.
+In the previous section, Cook #1 created a new branch, `breakfast`, and added a new recipe to it, `biscuits.md`. To release that recipe right away, instead of waiting for the `new_recipes` to release, Cook #1 needs to merge into a `MASTER` branch. You can merge locally or through a pull request, so choose one of the following.
 
 #### Merging locally
 If your team is cool with merging into MASTER locally, do the following.
@@ -100,3 +100,4 @@ But now I want that old commit back.
 
 ## 2.5 Merging a *really* old branch
 I don't want this commit.
+Let's try some other changes now.
