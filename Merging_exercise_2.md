@@ -3,7 +3,7 @@
 
 If you didn't complete [Exercise 1: Sharing a branch](Merging_exercise_1.md), stop and go do that! This exercise builds on work done in Exercise 1.
 
-Developers working in the same branch is like cooks working in the same kitchen—while they might get in each other's way, it's easy to see what's going on.
+Developers working in the same branch are like cooks working in the same kitchen—while they might get in each other's way, it's easy to see what's going on.
 
 But imagine if you could cook a meal with someone else, but have your own, separate workspace. You'd have complete control over your kitchen—your development environment—and you wouldn't have to worry too much about the other cook messing up your dish while you're working on it. You only have to worry about combining your dishes into a meal after you've cooked them.
 
@@ -91,3 +91,9 @@ If your team is a little more strict about merging into the master branch, do th
 6. Update the pull request details if desired, then click the **Create pull request button**.
 
 Someone else on your team can then review your pull request and merge it.
+
+## 2.3 Merging into master when master has changed
+
+## 2.4 Undoing a merge, but saving it for later
+
+## 2.5 Merging a *really* old branch
